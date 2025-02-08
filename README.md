@@ -27,3 +27,8 @@ Bu araç aşağıdaki Python kütüphanelerini kullanır:
 - `datetime`
 
 **Not:** Eğer bu kütüphaneler eksikse, program başlatıldığında otomatik olarak yüklenecektir.
+
+### KULLANIM
+**Ne işe yarar? Bende bilmiyorum at usb'ye tak çalıştır afied olsun.**
+**ReadJson.py dosyası .json dosyasını daha basit okumanızı sağlar daha iyisini yapıp kullanabilirsiniz.**
+**EXE formatına çevirmek daha mantıklı ama üşendim.**
