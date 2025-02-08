@@ -1,41 +1,29 @@
-🛠 Sistem Bilgi Toplayıcı (System Info Collector)
-📌 Açıklama
-Bu Python tabanlı araç, sistemin donanım ve yazılım bilgilerini toplar ve JSON formatında kaydeder.
+# 🛠 Sistem Bilgi Toplayıcı (System Info Collector)
 
-CPU, RAM, disk ve ağ bilgilerini toplar.
-Antivirüs, güvenlik duvarı ve güncellemeleri kontrol eder.
-Yüklü yazılımları ve çalışan süreçleri listeler.
-Eksik kütüphaneleri otomatik yükler, böylece her ortamda sorunsuz çalışır.
-📦 Kullanılan Kütüphaneler
-Bu araç, aşağıdaki Python kütüphanelerini kullanır:
+### 📌 Açıklama  
+Bu Python tabanlı araç, sistemin donanım ve yazılım bilgilerini toplar ve JSON formatında kaydeder.  
+Aşağıdaki bilgileri toplar:
+- **CPU, RAM, disk** ve **ağ bilgileri**
+- **Antivirüs**, **güvenlik duvarı** ve **güncellemeler**
+- **Yüklü yazılımlar** ve **çalışan işlemler**
+- **USB cihazlar**, **dosya bilgileri**, **IP adresi** ve **sıcaklık sensörü**
 
-bash
-Kopyala
-Düzenle
-psutil, wmi, socket, json, os, platform, time, getpass, subprocess, win32com.client, datetime
-Not: Eğer bir kütüphane eksikse, program başlatıldığında otomatik olarak yükleyecektir.
+Program, gerekli kütüphaneler yüklü değilse, bunları otomatik olarak yükler.
 
-💻 Kullanım
-Python ortamında çalıştırmak için:
+---
 
-bash
-Kopyala
-Düzenle
-python system_info.py
-Ya da .exe haline çevrilmiş versiyonunu doğrudan çalıştırabilirsin.
+### 📦 Kullanılan Kütüphaneler  
+Bu araç aşağıdaki Python kütüphanelerini kullanır:
+- `psutil`
+- `wmi`
+- `socket`
+- `json`
+- `os`
+- `platform`
+- `time`
+- `getpass`
+- `subprocess`
+- `win32com.client`
+- `datetime`
 
-📂 Çıktı Dosyası
-Toplanan veriler system_info.json dosyasına kaydedilir.
-
-🚀 .EXE Olarak Kullanım
-Eğer Python yüklü değilse ve doğrudan çalıştırmak istiyorsan .exe haline çevirebilirsin.
-Bunun için aşağıdaki komutu çalıştırabilirsin:
-
-bash
-Kopyala
-Düzenle
-pyinstaller --onefile system_info.py
-Çevrimiçi dönüştürücülerle .exe oluşturmak istersen şu siteleri kullanabilirsin:
-
-PyInstaller Web
-py2exe.net
+**Not:** Eğer bu kütüphaneler eksikse, program başlatıldığında otomatik olarak yüklenecektir.
